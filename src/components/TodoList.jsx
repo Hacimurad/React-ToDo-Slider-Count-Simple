@@ -53,6 +53,10 @@ class TodoList extends React.Component{
         this.setState({
             term:ter.target.value
         });
+        console.log("Fdffd")
+    }
+    test(){
+        console.log("Fdffd")
     }
 
     render(){
@@ -95,16 +99,12 @@ class TodoList extends React.Component{
                     <button onClick={()=>this.showSpec("complete")}>Complete</button>
                 </div>
           
-                <input type="text" 
-                   className="form-control search-input"
-                   placeholder="Search notes"
-                   vaalue={this.state.term}
-                   onChange = {this.onUpdateSearch}
-                     />
+              
 
                      <Search
-                        value={this.state.term}
+
                          onUpdateSearch = {this.onUpdateSearch}
+
                      />
 
           </div>
